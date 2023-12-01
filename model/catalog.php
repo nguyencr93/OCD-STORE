@@ -25,4 +25,8 @@
         }
         return $tb;
     }
+    function add_catalog($name){
+        $sql = "INSERT INTO catalog(name) VALUES('$name')";
+        insert($sql);
+    }
 ?>
